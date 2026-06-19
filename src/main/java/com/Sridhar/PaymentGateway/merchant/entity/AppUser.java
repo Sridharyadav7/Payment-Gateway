@@ -3,11 +3,17 @@ package com.Sridhar.PaymentGateway.merchant.entity;
 import com.Sridhar.PaymentGateway.common.enums.UserRole;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
+import lombok.*;
 
 import java.util.UUID;
 
 @Entity
 @Table(name = "appUser")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class AppUser {
 
     @Id

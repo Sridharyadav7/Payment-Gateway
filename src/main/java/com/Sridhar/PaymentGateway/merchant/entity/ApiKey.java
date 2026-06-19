@@ -2,12 +2,18 @@ package com.Sridhar.PaymentGateway.merchant.entity;
 
 import com.Sridhar.PaymentGateway.common.enums.Environment;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
 @Table(name = "apiKey")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class ApiKey {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
